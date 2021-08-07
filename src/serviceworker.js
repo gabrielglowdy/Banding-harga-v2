@@ -1,14 +1,14 @@
 const label_name = "banding-harga-"
 var staticCacheName = label_name + new Date().getTime();
 var filesToCache = [
-    '/css/sweetalert2.min.css',
-    '/index.html',
-    '/css/tailwind.css',
-    '/js/index.js',
-    '/js/sweetalert2.min.js',
-    '/image/icons-512.png',
-    '/image/illustration.svg',
-    '/image/illustration-dark.svg',
+    'css/sweetalert2.min.css',
+    '/',
+    'css/tailwind.css',
+    'js/index.js',
+    'js/sweetalert2.min.js',
+    'image/icons-512.png',
+    'image/illustration.svg',
+    'image/illustration-dark.svg',
 ];
 
 // Cache on install

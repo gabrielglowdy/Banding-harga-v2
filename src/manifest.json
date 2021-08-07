@@ -5,24 +5,23 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
   "start_url": "/",
   "description": "Bandingin Harga Produk dari berbagai ukuran",
   "icons": [
     {
-      "src": "/image/icons-512.png",
+      "src": "image/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "screenshots": [
     {
-      "src": "/image/screen-light.png",
+      "src": "image/screen-light.png",
       "type": "image/png",
       "sizes": "1080x1920"
     },
     {
-      "src": "/image/screen-dark.png",
+      "src": "image/screen-dark.png",
       "type": "image/png",
       "sizes": "1080x1920"
     }

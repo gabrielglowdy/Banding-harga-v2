@@ -9,6 +9,9 @@
     />
     <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="manifest" href="manifest.json" />
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#2bc293" />
   </head>
   <body class="dark">
     <main class="bg-white dark:bg-gray-800 h-full min-h-screen">
@@ -18,7 +21,7 @@
             md:container
             py-10
             sm:py-24
-            lg:py-52
+            lg:pt-52
             text-gray-800
             dark:text-gray-100
             px-8
@@ -365,14 +368,14 @@
       // Initialize the service worker
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("/serviceworker.js", {
+          .register("serviceworker.js", {
             scope: ".",
           })
           .then(
             function (registration) {
+              console.log(registration);
             },
-            function (err) {
-            }
+            function (err) {}
           );
       }
     </script>
