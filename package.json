@@ -1,11 +1,18 @@
 {
+  "scripts": {
+    "dev": "postcss ./src/css/tailwind.css -o ./src/css/tailwind.generated.css",
+    "prod": "cross-env NODE_ENV=production postcss ./src/css/tailwind.css -o ./dist/tailwind2.css"
+  },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.7",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
-    "@tailwindcss/typography": "^0.4.1"
+    "@tailwindcss/typography": "^0.4.1",
+    "postcss-import": "^14.0.2"
   }
 }
