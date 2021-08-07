@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "dev": "postcss ./src/css/tailwind.css -o ./src/css/tailwind.generated.css",
-    "prod": "cross-env NODE_ENV=production postcss ./src/css/tailwind.css -o ./dist/tailwind2.css"
+    "start": "node main.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
