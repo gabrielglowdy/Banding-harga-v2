@@ -6,6 +6,7 @@ var filesToCache = [
     'css/tailwind.css',
     'js/index.js',
     'js/sweetalert2.min.js',
+    'image/icon.png',
     'image/icons-512.png',
     'image/illustration.svg',
     'image/illustration-dark.svg',

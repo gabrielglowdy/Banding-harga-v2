@@ -19,6 +19,13 @@ const dark_icon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
 </svg>`;
 
+
+let body = document.querySelector('body');
+
+if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
+  body.classList.add('dark');
+}
+
 const swalCustom = Swal.mixin({
   customClass: customClassSwal,
   buttonsStyling: false,
@@ -253,9 +260,13 @@ function toggleDarkMode() {
 function refreshButton() {
   let body = document.querySelector("body");
   if (body.classList.contains("dark")) {
-    darkButton.innerHTML = light_icon + ` <span class="block md:inline text-xs md:text-base mt-1 md:mt-0">Light Mode</span>`;
+    darkButton.innerHTML =
+      light_icon +
+      ` <span class="block md:inline text-xs md:text-base mt-1 md:mt-0">Light Mode</span>`;
   } else {
-    darkButton.innerHTML = dark_icon + ` <span class="block md:inline text-xs md:text-base mt-1 md:mt-0">Dark Mode</span>`;
+    darkButton.innerHTML =
+      dark_icon +
+      ` <span class="block md:inline text-xs md:text-base mt-1 md:mt-0">Dark Mode</span>`;
   }
 }
 
